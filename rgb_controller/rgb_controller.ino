@@ -33,11 +33,9 @@ void loop() {
   analogWrite(ledR, gamma8[val1/4]);
   analogWrite(ledG, gamma8[val2/4]);
   analogWrite(ledB, gamma8[val3 /4]);
-  Serial.print("r: ");
-  Serial.println(val1);
-  Serial.print("g: ");
-  Serial.println(val2);
-  Serial.print("b: ");
-  Serial.println(val3);
-  Serial.println("");
+  Serial.print(val1/4);
+  Serial.print(",");
+  Serial.print(val2/4);
+  Serial.print(",");
+  Serial.println(val3/4);
 }
